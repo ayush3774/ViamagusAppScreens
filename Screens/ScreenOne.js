@@ -67,7 +67,7 @@ const ScreenOne = ({navigation}) => {
                     <View style={{ width: 81.66, height: 75, top: -15, left: 258 }}>
 
                         <Image
-                            source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/bit.png')}
+                            source={require('../assets/bit.png')}
                             style={{}}
                             resizeMode="contain"
                         />

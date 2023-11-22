@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, Pressable, FlatList } from 'react-native
 import { SafeAreaView } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeScreenn = () => {
     const [activeTab, setActiveTab] = useState('Games Played');
@@ -52,7 +53,7 @@ const HomeScreenn = () => {
     const renderItem = ({ item }) => (
         <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 10, padding: 20, borderWidth: 1, borderRadius: 10, width: 350, top: 15, backgroundColor:"white", borderColor:"white" }}>
             <Image
-                source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/icon.jpg')}
+                source={require('../assets/icon.jpg')}
                 style={{ width: 50, height: 50, left: -10 }}
                 resizeMode="contain"
             />
@@ -76,7 +77,7 @@ const HomeScreenn = () => {
                     <View style={{backgroundColor:"white", width:400, height: 470}}>
                         <View style={{ flexDirection: "row", justifyContent: "space-between", top: 10 , backgroundColor:"white"}}>
                             <Image
-                                source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/dhhus.png')}
+                                source={require('../assets/dhhus.png')}
                                 style={{ width: 40, height: 40, marginBottom: 20, left: 10 }}
                                 resizeMode="contain"
                             />
@@ -84,7 +85,7 @@ const HomeScreenn = () => {
                             <Text style={{ fontWeight: '400', fontSize: 20, color: 'grey', top: 5 }}>Profile</Text>
 
                             <Image
-                                source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/msg.jpg')}
+                                source={require('../assets/msg.jpg')}
                                 style={{ width: 40, height: 40, marginTop: 0, left: -5}}
                                 resizeMode="contain"
                             />
@@ -92,7 +93,7 @@ const HomeScreenn = () => {
 
                         <View style={{ width: 343, height: 215, top:30, backgroundColor:"white" }}>
                             <Image
-                                source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/IMG_3491.jpg')}
+                                source={require('../assets/IMG_3491.jpg')}
                                 style={{ width: 76, height: 75, top: -20, left: 165 }}
                                 resizeMode="contain"
                             />
@@ -110,7 +111,7 @@ const HomeScreenn = () => {
                             </Text>
                         </View>
                         <Image
-                                source={require('/Users/ayushpriyadarshi/Desktop/Viamagus/ViamagusApp/assets/IMG_3492.jpg')}
+                                source={require('../assets/IMG_3492.jpg')}
                                 style={{ width: 26.87, height: 31, top:30, left:190 }}
                                 resizeMode="contain"
                             />
